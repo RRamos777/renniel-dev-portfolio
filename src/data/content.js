@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Renniel Ramos',
-  role: 'Full Stack Developer',
+  role: 'Full Stack Developer · 3+ years',
   tagline:
     'I build the systems businesses run on: insurance platforms, payroll, ticketing and automation that replaces manual work.',
   status: 'Open to remote roles · US / UK / AU hours',

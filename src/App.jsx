@@ -59,7 +59,7 @@ export default function App() {
           <Section id="about" title="About">
             <div className="space-y-4">
               <p>
-                I'm a <strong>full stack developer</strong> based in Angeles City, Philippines. Most of my work lives
+                I'm a <strong>full stack developer</strong> with 3+ years of experience, based in Angeles City, Philippines. Most of my work lives
                 inside companies: the internal platforms that process policies, pay people, track production and route
                 requests. I care about software that is fast, boring to operate and easy for the next developer to pick
                 up.
@@ -128,10 +128,6 @@ export default function App() {
             </a>
             <p className="mt-4 text-sm text-muted">Full-time remote · Available for EST/PST, GMT and AEST overlap.</p>
           </Section>
-
-          <footer className="mt-18 max-w-sm text-[0.82rem] text-muted">
-            Built with React, Tailwind CSS and Vite. Deployed on Vercel. © {new Date().getFullYear()} {profile.name}.
-          </footer>
         </main>
       </div>
     </>
