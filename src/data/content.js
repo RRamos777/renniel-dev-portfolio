@@ -7,6 +7,7 @@ export const profile = {
   email: 'renniel.ramos0701@gmail.com',
   github: 'https://github.com/RRamos777',
   linkedin: 'https://www.linkedin.com/in/renniel-ramos-78853123a/',
+  design: 'https://renniel-portfolio.vercel.app',
   resume: '/assets/Renniel_Ramos_Resume.pdf',
   photo: '/assets/renniel.webp',
 }

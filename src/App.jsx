@@ -75,6 +75,17 @@ export default function App() {
                 I like owning the whole path: database design, APIs, UI, deployment to IIS or Azure, and the production
                 support afterwards.
               </p>
+              <p>
+                Outside of code I also do graphic design and video editing.{' '}
+                <a
+                  href={profile.design}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-strong underline decoration-accent/40 underline-offset-4 transition-colors hover:text-accent"
+                >
+                  See that portfolio ↗
+                </a>
+              </p>
             </div>
           </Section>
 
@@ -88,7 +99,7 @@ export default function App() {
               href={profile.resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-block border-b border-transparent font-medium text-strong transition-colors hover:border-accent hover:text-accent"
+              className="mt-6 inline-block border-b border-transparent font-semibold text-strong transition-colors hover:border-accent hover:text-accent"
             >
               View full résumé <span aria-hidden="true">↗</span>
             </a>
@@ -109,7 +120,7 @@ export default function App() {
             <dl className="grid gap-3.5">
               {stack.map(([k, v]) => (
                 <div key={k} className="grid gap-0.5 border-b border-slate-400/10 pb-3.5 lg:grid-cols-[168px_1fr] lg:gap-4">
-                  <dt className="text-sm font-medium text-strong">{k}</dt>
+                  <dt className="text-sm font-semibold text-strong">{k}</dt>
                   <dd className="text-[0.94rem]">{v}</dd>
                 </div>
               ))}
@@ -122,7 +133,7 @@ export default function App() {
             </p>
             <a
               href={`mailto:${profile.email}`}
-              className="mt-5 inline-block rounded-md border border-accent px-5 py-3 text-[0.95rem] font-medium text-accent transition-colors hover:bg-accent/10"
+              className="mt-5 inline-block rounded-md border border-accent px-5 py-3 text-[0.95rem] font-semibold text-accent transition-colors hover:bg-accent/10"
             >
               {profile.email}
             </a>

@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/inter-latin-700-normal.woff2") format("woff2");
+}
+
 @theme {
   --color-ink: #0b0d10;
   --color-body: #9aa4b2;
@@ -20,7 +35,7 @@
     @apply bg-accent text-ink;
   }
   strong {
-    @apply text-strong font-medium;
+    @apply text-strong font-normal;
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }

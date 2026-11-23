@@ -1,10 +1,11 @@
 import { profile, sections } from '../data/content.js'
-import { GitHubIcon, LinkedInIcon, MailIcon } from './Icons.jsx'
+import { DesignIcon, GitHubIcon, LinkedInIcon, MailIcon } from './Icons.jsx'
 
 const socials = [
   { href: profile.github, label: 'GitHub', Icon: GitHubIcon, external: true },
   { href: profile.linkedin, label: 'LinkedIn', Icon: LinkedInIcon, external: true },
   { href: `mailto:${profile.email}`, label: 'Email', Icon: MailIcon },
+  { href: profile.design, label: 'Graphic design portfolio', Icon: DesignIcon, external: true },
 ]
 
 export default function Sidebar({ active }) {
@@ -21,7 +22,7 @@ export default function Sidebar({ active }) {
         <h1 className="text-4xl font-bold tracking-tight text-strong sm:text-5xl">
           <a href="/">{profile.name}</a>
         </h1>
-        <p className="mt-3 text-lg font-medium text-strong">{profile.role}</p>
+        <p className="mt-3 text-lg font-semibold text-strong">{profile.role}</p>
         <p className="mt-4 max-w-xs">{profile.tagline}</p>
 
         <nav aria-label="Sections" className="mt-14 hidden lg:block">
