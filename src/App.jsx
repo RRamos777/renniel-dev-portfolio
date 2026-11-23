@@ -133,10 +133,36 @@ export default function App() {
             </p>
             <a
               href={`mailto:${profile.email}`}
-              className="mt-5 inline-block rounded-md border border-accent px-5 py-3 text-[0.95rem] font-semibold text-accent transition-colors hover:bg-accent/10"
+              className="mt-5 inline-block rounded-md border border-accent px-5 py-3 text-[0.95rem] font-semibold break-all text-accent transition-colors hover:bg-accent/10"
             >
               {profile.email}
             </a>
+            <dl className="mt-8 grid gap-3.5">
+              {[
+                ['Phone', profile.phone, `tel:${profile.phone.replace(/\s/g, '')}`],
+                ['LinkedIn', 'View profile ↗', profile.linkedin],
+                ['GitHub', 'github.com/RRamos777 ↗', profile.github],
+                ['Résumé', 'Download PDF ↗', profile.resume],
+                ['Location', profile.location],
+              ].map(([label, value, href]) => (
+                <div key={label} className="grid gap-0.5 border-b border-slate-400/10 pb-3.5 lg:grid-cols-[168px_1fr] lg:gap-4">
+                  <dt className="text-sm font-semibold text-strong">{label}</dt>
+                  <dd className="text-[0.94rem] break-words">
+                    {href ? (
+                      <a
+                        href={href}
+                        className="transition-colors hover:text-accent"
+                        {...(href.startsWith('http') || href.endsWith('.pdf') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      >
+                        {value}
+                      </a>
+                    ) : (
+                      value
+                    )}
+                  </dd>
+                </div>
+              ))}
+            </dl>
             <p className="mt-4 text-sm text-muted">Full-time remote · Available for EST/PST, GMT and AEST overlap.</p>
           </Section>
         </main>

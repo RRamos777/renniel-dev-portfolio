@@ -5,6 +5,8 @@ export const profile = {
     'I build the systems businesses run on: insurance platforms, payroll, ticketing and automation that replaces manual work.',
   status: 'Open to remote roles · US / UK / AU hours',
   email: 'renniel.ramos0701@gmail.com',
+  phone: '+63 976 198 2137',
+  location: 'Angeles City, Philippines',
   github: 'https://github.com/RRamos777',
   linkedin: 'https://www.linkedin.com/in/renniel-ramos-78853123a/',
   design: 'https://renniel-portfolio.vercel.app',
